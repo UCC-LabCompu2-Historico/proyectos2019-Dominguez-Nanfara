@@ -9,6 +9,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="assets/images/logo-nar.png">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> de pag de bootstrap para cel-->
 
         <!--Google Font link-->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -20,9 +21,7 @@
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/bootsnav.css">
-        <link rel="stylesheet" href="assets/css/miEstilo.css">
-        <!--El ultimo sobreescribe a los anteriores-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 
         <!--For Plugins external css-->
@@ -32,6 +31,9 @@
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
+        <link rel="stylesheet" href="assets/css/bootsnav.css">
+        <link rel="stylesheet" href="assets/css/miEstilo.css">
+        <!--El ultimo sobreescribe a los anteriores-->
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -90,7 +92,6 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="main_home">
-                            <!--elimine-->
                         </div>
                         <div class="scrooldown">
                             <a href="#teoria"><i class="fa fa-chevron-down"></i></a>
@@ -104,7 +105,7 @@
 
             <!--Teoria Section-->
             <section id="teoria" class="teoria">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <div class="main_teoria p-top-60">
                             <div class="col-lg">
@@ -115,7 +116,7 @@
                         </div>
                     </div><!-- End off row -->
                 </div><!-- End off container -->
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <div class="main_screen">
                             <!-- Que son -->
@@ -239,7 +240,7 @@
                         <div class="col-md-4">
                             <div class="service">
                                 <div class="icon-holder">
-                                    <img src="img/icons/heart-blue.png" alt="" class="icon">
+                                    <img src="assets/images/suma.png" alt="" class="icon">
                                 </div>
                                 <h4 class="heading">Suma</h4>
                                 <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
@@ -248,7 +249,7 @@
                         <div class="col-md-4">
                             <div class="service">
                                 <div class="icon-holder">
-                                    <img src="img/icons/guru-blue.png" alt="" class="icon">
+                                    <img src="assets/images/comp.png" alt="" class="icon">
                                 </div>
                                 <h4 class="heading">Comparación</h4>
                                 <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
@@ -257,7 +258,7 @@
                         <div class="col-md-4">
                             <div class="service">
                                 <div class="icon-holder">
-                                    <img src="img/icons/weight-blue.png" alt="" class="icon">
+                                    <img src="assets/images/resta.png" alt="" class="icon">
                                 </div>
                                 <h4 class="heading">Resta</h4>
                                 <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
@@ -271,62 +272,13 @@
             <div class="scrollup">
                 <a href="#"><i class="fa fa-chevron-up"></i></a>
             </div><!-- End off scroll up -->
-            
-            
-            <footer id="footer" class="footer bg-black">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <nav class="navbar navbar-default bootsnav footer-menu no-background">
-                                <div class="container">  
-
-                                    <!-- Start Atribute Navigation -->
-                                    <div class="attr-nav">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
-                                    </div>        
-                                    <!-- End Atribute Navigation -->
 
 
-                                    <!-- Start Header Navigation -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-footer">
-                                            <i class="fa fa-bars"></i>
-                                        </button>
-                                        <a class="navbar-brand" href="#brand"><img src="assets/images/footer-logo.png" class="logo" alt=""></a>
-                                    </div>
-                                    <!-- End Header Navigation -->
-
-                                    <!-- navbar menu -->
-                                    <div class="collapse navbar-collapse" id="navbar-footer">
-                                        <ul class="nav navbar-nav navbar-center">
-                                            <li><a href="#home">Home</a></li>                    
-                                            <li><a href="#features">Teoría</a></li>
-                                            <li><a href="#reviews">Ejemplos</a></li>
-                                            <li><a href="#download">Practica</a></li>
-                                        </ul>
-                                    </div><!-- /.navbar-collapse -->
-                                </div>   
+            <footer id="footer" class="footer">
+                            <nav class="navbar navbar-default bootsnav footer-menu">
+                                <img src="assets/images/footbar.png"
                             </nav>
-                        </div>
-                        <div class="divider"></div>
-                        <div class="col-md-12">
-                            <div class="main_footer text-center p-top-40 p-bottom-30">
-                                <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Made with 
-                                    <i class="fa fa-heart"></i>
-                                    by 
-                                    <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
-                                    2016. All Rights Reserved
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            </footer> -->
 
 
 

@@ -1,0 +1,29 @@
+.suma
+{font-size: 13px;
+    position: left;
+    opacity: 1;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-decoration: none;}
+
+.suma-contenido
+{font-size: 13px;
+    position: left;
+    opacity: 1;
+    margin-top: 50px;
+    margin-left: 80px;
+    text-align: center;}
+
+.suma-top-50
+{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.suma-top-3
+{
+    margin-top: 3px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
