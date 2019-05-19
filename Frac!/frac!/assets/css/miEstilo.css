@@ -1,12 +1,20 @@
-.suma
-{font-size: 13px;
+/*Pagina principal*/
+.teoria
+{
+    text-align: justify;
+}
+
+/*Practica*/
+.titulo-act
+{
     position: left;
     opacity: 1;
-    margin-top: 10px;
-    margin-left: 10px;
-    text-decoration: none;}
+    margin-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
 
-.suma-contenido
+.act-contenido
 {font-size: 13px;
     position: left;
     opacity: 1;
@@ -14,16 +22,93 @@
     margin-left: 80px;
     text-align: center;}
 
-.suma-top-50
+.act-top-50
 {
     margin-top: 50px;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.suma-top-3
+.act-top-40
+{
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.act-top-10
+{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.act-top-3
 {
     margin-top: 3px;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
+}
+
+.act-top-3-prima
+{
+    margin-top: 3px;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.act-top-prima
+{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.operador-30x30
+{
+    margin-top: 75px;
+    width: 30px;
+    height: 30px;
+}
+
+.operador-30x20
+{
+    margin-top: 75px;
+    width: 30px;
+    height: 20px;
+}
+
+.operador-10x20
+{
+    margin-top: 75px;
+    width: 30px;
+    height: 10px;
+}
+
+.operador-15x15
+{
+    margin-top: 40px;
+    width: 15px;
+    height: 15px;
+}
+
+.lienzo
+{
+    border:1px solid #d3d3d3;
+}
+
+.button-top-10
+{
+    margin-top: 10px;
+}
+
+.button-top-50
+{
+    margin-top: 50px;
+}
+
+.enlace-act
+{
+    color: tomato;
 }
