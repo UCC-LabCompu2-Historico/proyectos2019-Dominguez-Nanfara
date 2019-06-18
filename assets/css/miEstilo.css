@@ -7,8 +7,6 @@
 /*Practica*/
 .titulo-act
 {
-    position: left;
-    opacity: 1;
     margin-top: 25px;
     margin-left: 25px;
     text-decoration: none;
@@ -18,20 +16,16 @@
 
 .titulo-act-comp
 {
-    position: left;
-    opacity: 1;
-    margin-top: 25px;
-    margin-left: 25px;
+    /*margin-top: 25px;
+    margin-left: 25px;*/
     text-decoration: none;
     width: 261px;
     height: 42px;
 }
 
 .act-contenido
-{font-size: 13px;
-    position: left;
-    opacity: 1;
-    margin-top: 50px;
+{   font-size: 13px;
+    /*margin-top: 50px;*/
     margin-left: 80px;
     text-align: center;}
 
@@ -106,9 +100,28 @@
     height: 15px;
 }
 
-.lienzo
+.button-circle-green
 {
-    border:1px solid #d3d3d3;
+    color: #000000;
+    margin-left: 40px;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 75px;
+    background: #5be36c;
+    border: 8px solid #5be36c;
+    border-radius: 30px;
+}
+
+.button-orange
+{
+    color: #000000;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    background: #e47d5d;
+    border: 2px solid #e47d5d;
+    border-radius: 30px;
 }
 
 #button-top-20-agua
@@ -127,7 +140,6 @@
     color: #000000;
     font-size: 15px;
     font-weight: bold;
-    font-weight: bold;
     margin-top: 20px;
     background: #fd5882;
     border: 2px solid #fd5882;
@@ -139,7 +151,6 @@
     color: #000000;
     font-size: 15px;
     font-weight: bold;
-    font-weight: bold;
     margin-top: 50px;
     background: #fdc429;
     border: 2px solid #fdc429;
@@ -150,6 +161,10 @@
 .enlace-act
 {
     color: tomato;
+}
+
+.cuad input{
+    max-width:50px;
 }
 
 .swiper-slide {
@@ -172,9 +187,32 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    box-shadow: 0px 0px 15px 0px #ddd;
+    box-shadow: 0 0 15px 0 #ddd;
 }
 
 .myCanvas
 {
-    border: 2px solid #000000;}
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.scrooldown{
+    position: absolute;
+    left: 48.5%;
+    bottom: 10%;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    background: #f4f5f9;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    z-index: 3;
+}
+
+.main_home{
+    overflow: hidden;
+    padding-top: 23rem;
+    padding-bottom: 35rem;
+}
