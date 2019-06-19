@@ -10,7 +10,7 @@
     margin-top: 25px;
     margin-left: 25px;
     text-decoration: none;
-    width: 28%;
+    width: 33%;
     height: 28%;
 }
 
@@ -19,8 +19,8 @@
     /*margin-top: 25px;
     margin-left: 25px;*/
     text-decoration: none;
-    width: 261px;
-    height: 42px;
+    width: 300px;
+    height: 48px;
 }
 
 .act-contenido
@@ -74,55 +74,32 @@
 
 .operador-30x30
 {
-    margin-top: 75px;
+    margin-top: 85px;
     width: 30px;
     height: 30px;
 }
 
 .operador-30x20
 {
-    margin-top: 75px;
+    margin-top: 85px;
     width: 30px;
     height: 20px;
 }
 
 .operador-10x20
 {
-    margin-top: 75px;
+    margin-top: 85px;
     width: 30px;
     height: 10px;
 }
 
 .operador-15x15
 {
-    margin-top: 40px;
+    margin-top: 45px;
     width: 15px;
     height: 15px;
 }
 
-.button-circle-green
-{
-    color: #000000;
-    margin-left: 40px;
-    font-size: 45px;
-    font-weight: bold;
-    margin-top: 75px;
-    background: #5be36c;
-    border: 8px solid #5be36c;
-    border-radius: 30px;
-}
-
-.button-orange
-{
-    color: #000000;
-    margin-left: 40px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 30px;
-    background: #e47d5d;
-    border: 2px solid #e47d5d;
-    border-radius: 30px;
-}
 
 #button-top-20-agua
 {
@@ -192,7 +169,7 @@
 
 .myCanvas
 {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 200px;
     height: 200px;
 }
@@ -215,4 +192,114 @@
     overflow: hidden;
     padding-top: 23rem;
     padding-bottom: 35rem;
+}
+
+/*--Boton---*/
+
+
+
+
+
+.btn {
+    top: 0;
+    left: 0;
+    transition: all .15s linear 0s;
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #FFE800;
+
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+
+    box-shadow: -4px 4px 0 #000000;
+    text-decoration: none;}
+
+&:hover {
+     top: 3px;
+     left: -3px;
+     box-shadow: -3px 3px #000000;}
+
+&::after {
+     top: 1px;
+     left: -2px;
+     width: 4px;
+     height: 4px;
+ }
+
+&::before {
+     bottom: -2px;
+     right: 1px;
+     width: 4px;
+     height: 4px;
+ }
+
+
+&::after {
+     transition: all .15s linear 0s;
+     content: '';
+     position: absolute;
+     top: 2px;
+     left: -4px;
+     width: 8px;
+     height: 8px;
+     background-color: #000000;
+     transform: rotate(45deg);
+     z-index: -1;
+
+ }
+
+&::before {
+     transition: all .15s linear 0s;
+     content: '';
+     position: absolute;
+     bottom: -4px;
+     right: 2px;
+     width: 8px;
+     height: 8px;
+     background-color: #404040;
+     transform: rotate(45deg);
+     z-index: -1;
+ }
+
+
+a.btn { position: relative; }
+
+a:active.btn {
+    top: 3px;
+    left: -3px;
+    box-shadow: none;}
+
+&:before {
+     bottom: 1px;
+     right: 1px;
+ }
+
+&:after {
+     top: 1px;
+     left: 1px;
+ }
+
+
+.btn-orange
+ {
+    padding: 3px 10px;
+    background-color: #e47d5d;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 20px 20px 80px;
+ }
+
+.button-green
+{
+    color: #000000;
+    padding: 1px 20px;
+    margin-left: 40px;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 75px;
+    border-radius: 15px;
 }

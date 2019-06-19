@@ -22,12 +22,12 @@
     <section id="titulo" class="titulo-act">
         <div class="row">
             <img src="assets/images/titulo_suma.png" class="titulo-act" alt="">
-            <div class="col">
-            <button class="button-orange" onclick="Nrand();">
-                NEW!
-            </button>
-            </div>
         </div>
+        <div class="col">
+        <button href="#" class="btn-orange btn" onclick="Nrand();">
+            NEW!
+        </button>
+    </div>
     </section>
     <section id="contenido" class="act-contenido">
         <div class="container-fluid">
@@ -45,10 +45,8 @@
                         </canvas>
                     </div>
                     <div class="justify-content-center">
-                        <button class="button-circle-green" onclick="Verif();">
-                            <p>
+                        <button href="#" class="button-green btn" onclick="Verif();">
                                 =
-                            </p>
                         </button>
                     </div>
                     <div class="col">
@@ -63,11 +61,11 @@
                     </div>
                     <div class="col act-top-50">
                         <label for="N2"></label>
-                        <input type="number" name="numerador2" id="N2" min="0" max="7" step="1" required>
+                        <input type="number" name="numerador2" id="N2" min="0" max="7" step="1" oninput="PorcionesN2();">
                     </div>
                     <div class="col act-top-50">
                         <label for="Nt"></label>
-                        <input type="number" name="numeradorT" id="Nt" min="0" max="7" step="1" required>
+                        <input type="number" name="numeradorT" id="Nt" min="0" max="7" step="1" oninput="PorcionesNt();">
                     </div>
                     <div class="w-100">
                     </div>
