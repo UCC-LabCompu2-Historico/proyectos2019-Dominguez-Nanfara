@@ -6,44 +6,14 @@
  * @return Valor que retorna
  */
 
+/*----bandejas----*/
+
 function Bandejas()
 {
     PizzaB1();
     PizzaB2();
     PizzaBR();
 }
-
-function Nrand()
-{
-    var val = Math.floor(Math.random() * (7 - 1)) + 1;
-    document.getElementById('N1').value = val;
-    document.getElementById('N2').value = "";
-    document.getElementById('Nt').value = "";
-    PizzaB2();
-    PizzaBR();
-    PorcionesR(val);
-}
-
-function Verif() {
-    var n1 = document.getElementById('N1').value;
-    var n2 = document.getElementById('N2').value;
-    var nt = document.getElementById('Nt').value;
-    var result = parseInt(nt) - parseInt(n2);
-    if (n1==result)
-    {
-        alert("Bien hecho!")
-    }
-    else{
-        var pregunta = confirm("¿Deseas repasar la teoría?")
-        if (pregunta){
-            alert("Te envío allí rápidamente")
-            window.location = "https://ucc-labcompu2.github.io/proyectos2019-Dominguez-Nanfara/";
-        }
-        else{
-            alert("Tu puedes!")
-        }
-    }}
-
 
 function PizzaB1()
 {   var canvas = document.getElementById('PrimSumando');
@@ -69,64 +39,187 @@ function PizzaBR()
     ctx.drawImage(imgbandeja, 0, 0, 350, 350,0,0,524,262);
 }
 
+function Nrand()
+{
+    //var val = Math.floor(Math.random() * (7 - 1)) + 1;
+    var val = Math.floor(Math.random() * (7));
+    document.getElementById('N1').value = val;
+    document.getElementById('N2').value = "";
+    document.getElementById('Nt').value = "";
+    PorcionesR(val);
+    PizzaB2();
+    PizzaBR();
+}
+
+function Verif() {
+    var n1 = document.getElementById('N1').value;
+    var n2 = document.getElementById('N2').value;
+    var nt = document.getElementById('Nt').value;
+    var result = parseInt(nt) - parseInt(n2);
+    if (n1==result)
+    {
+        alert("Bien hecho!")
+    }
+    else{
+        var pregunta = confirm("¿Deseas repasar la teoría?")
+        if (pregunta){
+            alert("Te envío allí rápidamente")
+            window.location = "https://ucc-labcompu2.github.io/proyectos2019-Dominguez-Nanfara/";
+        }
+        else{
+            alert("Tu puedes!")
+        }
+    }}
+
+
+/*----Canvas y porciones----*/
+
 function PorcionesR(valor)
 {
     var canvas = document.getElementById('PrimSumando');
     var ctx = canvas.getContext('2d');
     var img;
-    switch (valor) {
-        case "1":
+    switch (valor)
+    {
+        case 0:
             img = new Image();
-            img.src = 'assets/images/P1-7p.png';
+            img.src = 'assets/images/P0-7.png';
             ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
             break;
-        case "2":
+        case 1:
             img = new Image();
-            img.src = 'assets/images/P2-7p.png';
+            img.src = 'assets/images/P1-7.png';
             ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
             break;
-        case "3":
+        case 2:
             img = new Image();
-            img.src = 'assets/images/P3-7p.png';
+            img.src = 'assets/images/P2-7.png';
+            ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
+            break;
+        case 3:
+            img = new Image();
+            img.src = 'assets/images/P3-7.png';
             ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
             break;
         case 4:
             img = new Image();
-            img.src = 'assets/images/P4-7p.png';
+            img.src = 'assets/images/P4-7.png';
             ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
             break;
         case 5:
             img = new Image();
-            img.src = 'assets/images/P5-7p.png';
+            img.src = 'assets/images/P5-7.png';
             ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
             break;
         case 6:
             img = new Image();
-            img.src = 'assets/images/P6-7p.png';
+            img.src = 'assets/images/P6-7.png';
             ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
             break;
-}}
+    }}
 
-/*function PizzaB(id_elem)
-{  var canvas;
-    var ctx;
-    var imgbandeja
-
-    if(id_elem== "SegSumando")
+function PorcionesN2()
+{
+    var canvas = document.getElementById('SegSumando');
+    var ctx = canvas.getContext('2d');
+    var img;
+    var valor = document.getElementById('N2').value;
+    switch (valor)
     {
-        canvas = document.getElementById('SegSumando');
-        ctx = canvas.getContext('2d');
-        imgbandeja = new Image();
-        imgbandeja.src = 'assets/images/P0-7.png';
-        ctx.drawImage(imgbandeja, 0, 0, 350, 350, 0, 0, 524, 262);
-    }
-    if(id_elem== "Resultado")
-    {
-        canvas = document.getElementById('Resultado');
-        ctx = canvas.getContext('2d');
-        imgbandeja = new Image();
-        imgbandeja.src = 'assets/images/P0-7.png';
-        ctx.drawImage(imgbandeja, 0, 0, 350, 350, 0, 0, 524, 262);
-    }
+        case "0":
+            img = new Image();
+            img.src = 'assets/images/P0-7.png';
+            ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
+            break;
+        case "1":
+            img = new Image();
+            img.src = 'assets/images/P1-7.png';
+            ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
+            break;
+        case "2":
+            img = new Image();
+            img.src = 'assets/images/P2-7.png';
+            ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
+            break;
+        case "3":
+            img = new Image();
+            img.src = 'assets/images/P3-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+        case "4":
+            img = new Image();
+            img.src = 'assets/images/P4-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+        case "5":
+            img = new Image();
+            img.src = 'assets/images/P5-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+        case "6":
+            img = new Image();
+            img.src = 'assets/images/P6-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+        case "7":
+            img = new Image();
+            img.src = 'assets/images/P7-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+    }}
 
-}*/
+function PorcionesNt()
+{
+    var canvas = document.getElementById('Resultado');
+    var ctx = canvas.getContext('2d');
+    var img;
+    var valor = document.getElementById('Nt').value;
+    switch (valor)
+    {
+        case "0":
+            img = new Image();
+            img.src = 'assets/images/P0-7.png';
+            ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
+            break;
+        case 0:
+            img = new Image();
+            img.src = 'assets/images/P0-7.png';
+            ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
+            break;
+        case "1":
+            img = new Image();
+            img.src = 'assets/images/P1-7.png';
+            ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
+            break;
+        case "2":
+            img = new Image();
+            img.src = 'assets/images/P2-7.png';
+            ctx.drawImage(img,  0, 0, 350, 350,0,0,524,262);
+            break;
+        case "3":
+            img = new Image();
+            img.src = 'assets/images/P3-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+        case "4":
+            img = new Image();
+            img.src = 'assets/images/P4-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+        case "5":
+            img = new Image();
+            img.src = 'assets/images/P5-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+        case "6":
+            img = new Image();
+            img.src = 'assets/images/P6-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+        case "7":
+            img = new Image();
+            img.src = 'assets/images/P7-7.png';
+            ctx.drawImage(img, 0, 0, 350, 350,0,0,524,262);
+            break;
+    }}
+
