@@ -59,7 +59,8 @@ function Nrand()
     PizzaBR();
 }
 
-function Verif() {
+function Verif()
+{
     var n1 = document.getElementById('N1').value;
     var n2 = document.getElementById('N2').value;
     var nt = document.getElementById('Nt').value;
@@ -72,7 +73,7 @@ function Verif() {
         var pregunta = confirm("¿Deseas repasar la teoría?")
         if (pregunta){
             alert("Te envío allí rápidamente")
-            window.location = "https://ucc-labcompu2.github.io/proyectos2019-Dominguez-Nanfara/";
+            window.location = 'index.html';
         }
         else{
             alert("Tu puedes!")
@@ -429,72 +430,289 @@ function ChocoR()
 /*----End Resta----*/
 
 /*----Comparacion----*/
+function Aleat()
 
-function Nrandc()
 {
     var val1 = Math.floor(Math.random() * (10));
-    var val2 = Math.floor(Math.random() * (10));
     var canvas1 = document.getElementById('Cizq');
-    var ctx1 = canvas.getContext('2d');
+    var ctx1 = canvas1.getContext('2d');
     var img1  = new Image();
-    var canvas2 = document.getElementById('Cder');
-    var ctx2 = canvas.getContext('2d');
-    var img2  = new Image();
-    //img2.onload = function ();
-    //img1.onload = function()
-    switch (val1)
-    {
+    switch (val1) {
         case 0:
             img1.src = 'assets/images/F0.jpg';
-            ctx1.drawImage(img1, 0,0 , 500, 600, 0, 0, 500, 200;
+            ctx1.drawImage(img1, 0, 0, 504, 525, 0, 0, 516, 269);
             document.getElementById('numizq').value = 6;
             document.getElementById('denizq').value = 8;
             break;
         case 1:
             img1.src = 'assets/images/F1.jpg';
-            ctx1.drawImage(img1, );
+            ctx1.drawImage(img1, 0, 0, 504, 525, 0, 0, 516, 269);
             document.getElementById('numizq').value = 5;
             document.getElementById('denizq').value = 6;
             break;
         case 2:
             img1.src = 'assets/images/F2.jpg';
-            ctx1.drawImage(img1, );
+            ctx1.drawImage(img1, 0, 0, 504, 525, 0, 0, 516, 269);
             document.getElementById('numizq').value = 2;
             document.getElementById('denizq').value = 3;
             break;
         case 3:
             img1.src = 'assets/images/F3.jpg';
-            ctx1.drawImage(img1, );
+            ctx1.drawImage(img1,0, 0, 504, 525, 0, 0, 516, 269);
             document.getElementById('numizq').value = 1;
             document.getElementById('denizq').value = 3;
             break;
         case 4:
             img1.src = 'assets/images/F4.jpg';
-            ctx1.drawImage(img1, );
-            document.getElementById('numizq').value = 5;
+            ctx1.drawImage(img1,0, 0, 504, 525, 0, 0, 516, 269);
             document.getElementById('denizq').value = 8;
             break;
         case 5:
             img1.src = 'assets/images/F5.jpg';
-            ctx1.drawImage(img1, );
+            ctx1.drawImage(img1,0, 0, 504, 525, 0, 0, 516, 269);
             document.getElementById('numizq').value = 3;
             document.getElementById('denizq').value = 8;
             break;
         case 6:
             img1.src = 'assets/images/F6.jpg';
-            ctx1.drawImage(img1, );
+            ctx1.drawImage(img1,0, 0, 504, 525, 0, 0, 516, 269);
             document.getElementById('numizq').value = 3;
             document.getElementById('denizq').value = 6;
             break;
         case 7:
             img1.src = 'assets/images/F7.jpg';
-            ctx1.drawImage(img1, );
+            ctx1.drawImage(img1, 0, 0, 504, 525, 0, 0, 516, 269);
             document.getElementById('numizq').value = 2;
             document.getElementById('denizq').value = 6;
             break;
         case 8:
             img1.src = 'assets/images/F8.jpg';
-            ctx1.drawImage(img1, );
+            ctx1.drawImage(img1,0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numizq').value = 4;
+            document.getElementById('denizq').value = 6;
+            break;
+        case 9:
+            img1.src = 'assets/images/F9.jpg';
+            ctx1.drawImage(img1,0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numizq').value = 7;
+            document.getElementById('denizq').value = 8;
+            break;
+        case 10:
+            img1.src = 'assets/images/F10.jpg';
+            ctx1.drawImage(img1, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numizq').value = 2;
+            document.getElementById('denizq').value = 8;
+            break;
+
+    }
+
+}
+
+function Aleatd()
+{
+    var val2 = Math.floor(Math.random() * (10));
+    var canvas2 = document.getElementById('Cder');
+    var ctx2 = canvas2.getContext('2d');
+    var img2  = new Image();
+    switch (val2) {
+        case 0:
+            img2.src = 'assets/images/F0.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 6;
+            document.getElementById('dender').value = 8;
+            break;
+        case 1:
+            img2.src = 'assets/images/F1.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 5;
+            document.getElementById('dender').value = 6;
+            break;
+        case 2:
+            img2.src = 'assets/images/F2.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 2;
+            document.getElementById('dender').value = 3;
+            break;
+        case 3:
+            img2.src = 'assets/images/F3.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 1;
+            document.getElementById('dender').value = 3;
+            break;
+        case 4:
+            img2.src = 'assets/images/F4.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 5;
+            document.getElementById('dender').value = 8;
+            break;
+        case 5:
+            img2.src = 'assets/images/F5.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 3;
+            document.getElementById('dender').value = 8;
+            break;
+        case 6:
+            img2.src = 'assets/images/F6.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 3;
+            document.getElementById('dender').value = 6;
+            break;
+        case 7:
+            img2.src = 'assets/images/F7.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 2;
+            document.getElementById('dender').value = 6;
+            break;
+        case 8:
+            img2.src = 'assets/images/F8.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 4;
+            document.getElementById('dender').value = 6;
+            break;
+        case 9:
+            img2.src = 'assets/images/F9.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 7;
+            document.getElementById('dender').value = 8;
+            break;
+        case 10:
+            img2.src = 'assets/images/F10.jpg';
+            ctx2.drawImage(img2, 0, 0, 504, 525, 0, 0, 516, 269);
+            document.getElementById('numder').value = 2;
+            document.getElementById('dender').value = 8;
+            break;
+    }
+
+}
+
+function BMa() {
+    var n1 = document.getElementById('numizq').value;
+    var n2 = document.getElementById('numder').value;
+    var d1 = document.getElementById('denizq').value;
+    var d2 = document.getElementById('dender').value;
+    var result1 = (n1 / d1);
+    var result2 = (n2 / d2);
+    if (result1 > result2) {
+        alert("Bien hecho!")
+    } else {
+        var pregunta = confirm("¿Deseas repasar la teoría?")
+        if (pregunta) {
+            alert("Te envío allí rápidamente")
+            window.location = 'index.html';
+        } else {
+            alert("Tu puedes!")
+        }
+    }
+}
+
+function BMe() {
+    var n1 = document.getElementById('numizq').value;
+    var n2 = document.getElementById('numder').value;
+    var d1 = document.getElementById('denizq').value;
+    var d2 = document.getElementById('dender').value;
+    var result1 = (n1 / d1);
+    var result2 = (n2 / d2);
+    if (result1 < result2) {
+        alert("Bien hecho!")
+    } else {
+        var pregunta = confirm("¿Deseas repasar la teoría?")
+        if (pregunta) {
+            alert("Te envío allí rápidamente")
+            window.location = 'index.html';
+        } else {
+            alert("Tu puedes!")
+        }
+    }
+}
+
+function BI() {
+    var n1 = document.getElementById('numizq').value;
+    var n2 = document.getElementById('numder').value;
+    var d1 = document.getElementById('denizq').value;
+    var d2 = document.getElementById('dender').value;
+    var result1 = (n1 / d1);
+    var result2 = (n2 / d2);
+    if (result1 == result2) {
+        alert("Bien hecho!")
+    } else {
+        var pregunta = confirm("¿Deseas repasar la teoría?")
+        if (pregunta) {
+            alert("Te envío allí rápidamente")
+            window.location = 'index.html';
+        } else {
+            alert("Tu puedes!")
+        }
+    }
+}
+
+
+
+/*
+function Nrandc()
+{
+    alert(entro);
+    var val1 = Math.floor(Math.random() * (10));
+    var val2 = Math.floor(Math.random() * (10));
+    var canvas1 = document.getElementById('Cizq');
+    var ctx1 = canvas1.getContext('2d');
+    var img1  = new Image();
+    var canvas2 = document.getElementById('Cder');
+    var ctx2 = canvas2.getContext('2d');
+    var img2  = new Image();
+    {
+    switch (val1)
+    {
+        case 0:
+            img1.src = 'assets/images/F0.jpg';
+            ctx1.drawImage(img1, 0,0 , 600, 600, 0, 0, 500, 200);
+            document.getElementById('numizq').value = 6;
+            document.getElementById('denizq').value = 8;
+            break;
+        case 1:
+            img1.src = 'assets/images/F1.jpg';
+            ctx1.drawImage(img1,0,0 , 500, 600, 0, 0, 500, 200);
+            document.getElementById('numizq').value = 5;
+            document.getElementById('denizq').value = 6;
+            break;
+        case 2:
+            img1.src = 'assets/images/F2.jpg';
+            ctx1.drawImage(img1,0,0 , 500, 600, 0, 0, 500, 200);
+            document.getElementById('numizq').value = 2;
+            document.getElementById('denizq').value = 3;
+            break;
+        case 3:
+            img1.src = 'assets/images/F3.jpg';
+            ctx1.drawImage(img1,0,0 , 500, 600, 0, 0, 500, 200);
+            document.getElementById('numizq').value = 1;
+            document.getElementById('denizq').value = 3;
+            break;
+        case 4:
+            img1.src = 'assets/images/F4.jpg';
+            ctx1.drawImage(img1,0,0 , 500, 600, 0, 0, 500, 200);
+            document.getElementById('numizq').value = 5;
+            document.getElementById('denizq').value = 8;
+            break;
+        case 5:
+            img1.src = 'assets/images/F5.jpg';
+            ctx1.drawImage(img1,0,0 , 500, 600, 0, 0, 500, 200);
+            document.getElementById('numizq').value = 3;
+            document.getElementById('denizq').value = 8;
+            break;
+        case 6:
+            img1.src = 'assets/images/F6.jpg';
+            ctx1.drawImage(img1,0,0 , 500, 600, 0, 0, 500, 200);
+            document.getElementById('numizq').value = 3;
+            document.getElementById('denizq').value = 6;
+            break;
+        case 7:
+            img1.src = 'assets/images/F7.jpg';
+            ctx1.drawImage(img1, 0,0 , 500, 600, 0, 0, 500, 200);
+            document.getElementById('numizq').value = 2;
+            document.getElementById('denizq').value = 6;
+            break;
+        case 8:
+            img1.src = 'assets/images/F8.jpg';
+            ctx1.drawImage(img1,0,0 , 500, 600, 0, 0, 500, 200 );
             document.getElementById('numizq').value = 4;
             document.getElementById('denizq').value = 6;
             break;
@@ -506,80 +724,81 @@ function Nrandc()
             break;
         case 10:
             img1.src = 'assets/images/F10.jpg';
-            ctx1.drawImage(img1, );
+            ctx1.drawImage(img1, 0,0 , 500, 600, 0, 0, 500, 200);
             document.getElementById('numizq').value = 2;
             document.getElementById('denizq').value = 8;
             break;
-    }
-    switch (val2)
-    {
-        case 0:
-            img2.src = 'assets/images/F0.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 6;
-            document.getElementById('dender').value = 8;
-            break;
-        case 1:
-            img2.src = 'assets/images/F1.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 5;
-            document.getElementById('dender').value = 6;
-            break;
-        case 2:
-            img2.src = 'assets/images/F2.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 2;
-            document.getElementById('dender').value = 3;
-            break;
-        case 3:
-            img2.src = 'assets/images/F3.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 1;
-            document.getElementById('dender').value = 3;
-            break;
-        case 4:
-            img2.src = 'assets/images/F4.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 5;
-            document.getElementById('dender').value = 8;
-            break;
-        case 5:
-            img2.src = 'assets/images/F5.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 3;
-            document.getElementById('dender').value = 8;
-            break;
-        case 6:
-            img2.src = 'assets/images/F6.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 3;
-            document.getElementById('dender').value = 6;
-            break;
-        case 7:
-            img2.src = 'assets/images/F7.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 2;
-            document.getElementById('dender').value = 6;
-            break;
-        case 8:
-            img2.src = 'assets/images/F8.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 4;
-            document.getElementById('dender').value = 6;
-            break;
-        case 9:
-            img2.src = 'assets/images/F9.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 7;
-            document.getElementById('dender').value = 8;
-            break;
-        case 10:
-            img2.src = 'assets/images/F10.jpg';
-            ctx2.drawImage(img2, );
-            document.getElementById('numder').value = 2;
-            document.getElementById('dender').value = 8;
-            break;
+    }}
+    img2.onload = function () {
+        switch (val2) {
+            case 0:
+                img2.src = 'assets/images/F0.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 6;
+                document.getElementById('dender').value = 8;
+                break;
+            case 1:
+                img2.src = 'assets/images/F1.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 5;
+                document.getElementById('dender').value = 6;
+                break;
+            case 2:
+                img2.src = 'assets/images/F2.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 2;
+                document.getElementById('dender').value = 3;
+                break;
+            case 3:
+                img2.src = 'assets/images/F3.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 1;
+                document.getElementById('dender').value = 3;
+                break;
+            case 4:
+                img2.src = 'assets/images/F4.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 5;
+                document.getElementById('dender').value = 8;
+                break;
+            case 5:
+                img2.src = 'assets/images/F5.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 3;
+                document.getElementById('dender').value = 8;
+                break;
+            case 6:
+                img2.src = 'assets/images/F6.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 3;
+                document.getElementById('dender').value = 6;
+                break;
+            case 7:
+                img2.src = 'assets/images/F7.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 2;
+                document.getElementById('dender').value = 6;
+                break;
+            case 8:
+                img2.src = 'assets/images/F8.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 4;
+                document.getElementById('dender').value = 6;
+                break;
+            case 9:
+                img2.src = 'assets/images/F9.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 7;
+                document.getElementById('dender').value = 8;
+                break;
+            case 10:
+                img2.src = 'assets/images/F10.jpg';
+                ctx2.drawImage(img2, 0, 0, 500, 600, 0, 0, 500, 200);
+                document.getElementById('numder').value = 2;
+                document.getElementById('dender').value = 8;
+                break;
+        }
     }
 }
 
-
+*/
