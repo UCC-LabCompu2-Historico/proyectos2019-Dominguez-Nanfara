@@ -17,7 +17,10 @@
     PizzaB2();
     PizzaBR();
 }*/
-
+/**
+ * Esta funcion se encarga de dibujar la bandeja vacia para la primer pizza
+ * @method PizzaB1();
+ */
 function PizzaB1()
 {   var canvas = document.getElementById('PrimSumando');
     var ctx = canvas.getContext('2d');
@@ -27,6 +30,11 @@ function PizzaB1()
     {ctx.drawImage(imgbandeja, 0, 0, 350, 350,0,0,524,262);}
 }
 
+
+/**
+ * Esta funcion se encarga de dibujar la bandeja vacia para la segunda pizza
+ * @method PizzaB2();
+ */
 function PizzaB2()
 {   var canvas = document.getElementById('SegSumando');
     var ctx = canvas.getContext('2d');
@@ -35,6 +43,10 @@ function PizzaB2()
     imgbandeja.onload = function()
     {ctx.drawImage(imgbandeja, 0, 0, 350, 350,0,0,524,262);}
 }
+/**
+ * Esta funcion se encarga de dibujar la bandeja vacia para la tercer pizza
+ * @method PizzaBR();
+ */
 
 function PizzaBR()
 {   var canvas = document.getElementById('Resultado');
@@ -47,6 +59,11 @@ function PizzaBR()
 
 /*----end bandejas----*/
 
+/**
+ * Esta funcion se encarga de buscar un numerador aleatorio
+ * @method Nrand();
+ */
+
 function Nrand()
 {
     //var val = Math.floor(Math.random() * (7 - 1)) + 1;
@@ -58,6 +75,11 @@ function Nrand()
     PizzaB2();
     PizzaBR();
 }
+
+/**
+ *Esta funcion se encarga de verificar si el usuario realizo correctamente la suma
+ * @method Verif();
+ */
 
 function Verif()
 {
@@ -82,6 +104,13 @@ function Verif()
 
 
 /*----Canvas y Pizzas----*/
+
+/**
+ *Esta funcion se encarga de dibujar las porciones de las pizzas
+ @method PorcionesR();
+ @param valor();
+
+*/
 
 function PorcionesR(valor)
 {
@@ -120,6 +149,10 @@ function PorcionesR(valor)
             break;
     }}
 
+/**
+ *Esta funcion se encarga de dibujar las porciones de las pizzas para la segunda fraccion
+ @method PorcionesN2();
+ */
 function PorcionesN2()
 {
     var canvas = document.getElementById('SegSumando');
@@ -162,6 +195,11 @@ function PorcionesN2()
             break;
     }}
 
+
+/**
+ *Esta funcion se encarga de dibujar las porciones de las pizzas para la tercer fraccion
+ @method PorcionesNt();
+ */
 function PorcionesNt()
 {
     var canvas = document.getElementById('Resultado');
@@ -209,6 +247,11 @@ function PorcionesNt()
 /*----End suma----*/
 
 /*----Resta----*/
+/**
+ * Esta funcion se encarga de buscar un numerador aleatorio
+ * @method Nrandp();
+ */
+
 function Nrandp()
 {   var val= Math.floor(Math.random() * (12-1))+1;
     document.getElementById('numerador1').value = val;
@@ -219,13 +262,17 @@ function Nrandp()
     ChocPR();
 }
 
+/**
+ *Esta funcion se encarga de verificar si el usuario realizo correctamente la resta
+ @method verifrest();
+ */
 function Verifrest(){
-    var r1= document.getElementById("Minuendo").value;
-    var r2= document.getElementById("Sustraendo").value;
-    var rt=document.getElementById("Diferencia").value;
-    var resultado = parseInt(rt) + parseInt(r2);
-    alert (resultado)
-    if(r1==resultado)
+    var r1= document.getElementById("numerador1").value;
+    var r2= document.getElementById("numerador2").value;
+    var rt=document.getElementById("numeradorT").value;
+    var result;
+    result= parseInt(r2) + parseInt(rt);
+    if(parseInt(r1)==result)
     {
         alert("Bien hecho!")
     }
@@ -241,6 +288,12 @@ function Verifrest(){
     }
 }
 /*---Papeles/envoltorioa----*/
+
+
+/**
+ *Esta funcion se encarga de dibujar el envoltorio de los chocolates de la fraccion minuendo
+ @method ChocoP1();
+ */
 function ChocP1()
 {   var canvas = document.getElementById('Minuendo');
     var ctx = canvas.getContext('2d');
@@ -250,6 +303,10 @@ function ChocP1()
     {ctx.drawImage(imgbandeja, 0, 0, 490, 600,0,0,500,200);}
 }
 
+/**
+ *Esta funcion se encarga de dibujar "0" porciones de los chocolates de la fraccion sustraendo
+ @method ChocoP2();
+ */
 function ChocP2()
 {   var canvas = document.getElementById('Sustraendo');
     var ctx = canvas.getContext('2d');
@@ -259,6 +316,10 @@ function ChocP2()
     {ctx.drawImage(imgbandeja, 0, 0, 500, 600,0,0,500,200);}
 }
 
+/**
+ *Esta funcion se encarga de dibujar el envoltorio de los chocolates de la fraccion resultante
+ @method ChocoPR();
+ */
 function ChocPR()
 {   var canvas = document.getElementById('Diferencia');
     var ctx = canvas.getContext('2d');
@@ -269,7 +330,10 @@ function ChocPR()
 }
 /*----End Papeles/Envoltorios----*/
 /*----Canvas y Chocolates----*/
-
+/**
+ *Esta funcion se encarga de dibujar las porciones de los chocolates de la fraccion minuendo
+ @method Choco1();
+ */
 function Choco1()
 {
     var canvas = document.getElementById('Minuendo');
@@ -331,6 +395,11 @@ function Choco1()
             break;
     }
 }
+
+/**
+ *Esta funcion se encarga de dibujar las porciones de los chocolates de la fraccion sustraendo
+ @method Choco2();
+ */
 
 function Choco2()
 {
@@ -394,6 +463,10 @@ function Choco2()
 
     }
 }
+/**
+ *Esta funcion se encarga de dibujar las porciones de los chocolates de la fraccion resultante
+ @method ChocoR();
+ */
 
 function ChocoR()
 {
@@ -461,6 +534,10 @@ function ChocoR()
 /*----End Resta----*/
 
 /*----Comparacion----*/
+/**
+ *Esta funcion se encarga de buscar una fraccion mixta para la fraccion izquierda y representarla en frutas
+ @method Aleat();
+ */
 function Aleat()
 
 {
@@ -538,7 +615,10 @@ function Aleat()
     }
 
 }
-
+/**
+ *Esta funcion se encarga de buscar una fraccion mixta para la fraccion derecha y representarla en frutas
+ @method Aleatd();
+ */
 function Aleatd()
 {
     var val2 = Math.floor(Math.random() * (10));
@@ -615,7 +695,10 @@ function Aleatd()
     }
 
 }
-
+/**
+ *Esta funcion se encarga de verificar que el boton seleccionado (Mayor) sea el correcto
+ @method BMa();
+ */
 function BMa() {
     var n1 = document.getElementById('numizq').value;
     var n2 = document.getElementById('numder').value;
@@ -636,6 +719,10 @@ function BMa() {
     }
 }
 
+/**
+ *Esta funcion se encarga de verificar que el boton seleccionado (Menor) sea el correcto
+ @method BMe();
+ */
 function BMe() {
     var n1 = document.getElementById('numizq').value;
     var n2 = document.getElementById('numder').value;
@@ -656,6 +743,10 @@ function BMe() {
     }
 }
 
+/**
+ *Esta funcion se encarga de verificar que el boton seleccionado (Igual) sea el correcto
+ @method BMI();
+ */
 function BI() {
     var n1 = document.getElementById('numizq').value;
     var n2 = document.getElementById('numder').value;
