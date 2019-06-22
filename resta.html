@@ -21,7 +21,14 @@
 </head>
 <body onload="ChocP1(); ChocP2(); ChocPR()">
 <section id="titulo" class="titulo-act">
-    <img src="assets/images/titulo_resta.png" class="titulo-act" alt="">
+    <div class="row">
+        <img src="assets/images/titulo_resta.png" class="titulo-act" alt="">
+    </div>
+    <div class="col">
+        <button href="#" class="btn-orange btn" onclick="Nrandp();">
+            NEW!
+        </button>
+    </div>
 </section>
 <section id="contenido" class="act-contenido">
     <div class="container-fluid">
@@ -38,8 +45,10 @@
                     <canvas class="myCanvasr" id="Sustraendo">
                     </canvas>
                 </div>
-                <div>
-                    <img src="assets/images/igual.png" class="operador-30x20" alt="">
+                <div class="justify-content-center">
+                    <button href="#" class="button-green btn" onclick="Verifrest();">
+                        =
+                    </button>
                 </div>
                 <div class="col">
                     <canvas class="myCanvasr" id="Diferencia">
@@ -53,11 +62,11 @@
                 </div>
                 <div class="col act-top-50">
                     <label for="numerador2"></label>
-                    <input type="number" name="numerador" id="numerador2" min="0" max="12" step="1">
+                    <input type="number" name="numerador" id="numerador2" min="0" max="12" step="1" oninput="Choco2();">
                 </div>
                 <div class="col act-top-50">
                     <label for="numeradorT"></label>
-                    <input type="number" name="numerador" id="numeradorT" min="0" max="12" step="1">
+                    <input type="number" name="numerador" id="numeradorT" min="0" max="12" step="1" oninput="ChocoR();">
                 </div>
                 <div class="w-100">
                 </div>
