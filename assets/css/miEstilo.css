@@ -16,8 +16,8 @@
 
 .titulo-act-comp
 {
-    /*margin-top: 25px;
-    margin-left: 25px;*/
+    /*margin-top: 25px;*/
+    margin-left: 25px;
     text-decoration: none;
     width: 300px;
     height: 48px;
@@ -176,7 +176,7 @@
 
 .myCanvasr
 {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 200px;
     height: 300px;
 }
@@ -315,4 +315,9 @@ a:active.btn {
     font-weight: bold;
     margin-top: 75px;
     border-radius: 15px;
+}
+
+.mgl
+{
+    margin-left: 50px;
 }

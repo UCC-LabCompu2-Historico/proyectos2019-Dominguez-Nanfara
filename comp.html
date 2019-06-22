@@ -19,9 +19,16 @@
     <link rel="stylesheet" href="assets/css/miEstilo.css">
     <script type="text/javascript" src="assets/js/misFunciones.js"></script>
 </head>
-<body onload="Nrandc();">
+<body>
 <section id="titulo" class="titulo-act">
-    <img src="assets/images/titulo_comp.png" class="titulo-act-comp">
+    <div class="row">
+        <img src="assets/images/titulo_comp.png" class="titulo-act-comp">
+    </div>
+    <div class="col" onclick="Aleat(); Aleatd();">
+        <button href="#" class="btn-orange btn" >
+            NEW!
+        </button>
+    </div>
 </section>
 <section id="contenido" class="act-contenido">
     <div class="container-fluid">
@@ -30,19 +37,19 @@
                 <canvas class="myCanvasc" id="Cizq">
                 </canvas>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-2 mgl">
                 <div class="row justify-content-center">
-                    <button id="button-top-50-amarillo">
+                    <button id="button-top-50-amarillo" onclick="BMa();">
                          > mayor
                     </button>
                 </div>
                 <div class="row justify-content-center">
-                    <button id="button-top-20-agua">
+                    <button id="button-top-20-agua" onclick="BI();">
                          = igual
                     </button>
                 </div>
                 <div class="row justify-content-center">
-                    <button id="button-top-20-rosa">
+                    <button id="button-top-20-rosa" onclick="BMe()">
                         < menor
                     </button>
                 </div>
